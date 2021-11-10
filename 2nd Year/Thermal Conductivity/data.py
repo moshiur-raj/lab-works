@@ -15,5 +15,8 @@ temperature_polyfit = poly(time_polyfit)
 
 plt.plot(time, temperature, linestyle='', marker='.')
 plt.plot(time_polyfit, temperature_polyfit)
+plt.xlabel("Time (s)")
+plt.ylabel("Temperature (C)")
+plt.legend()
 plt.savefig('fig.png')
 plt.show()
